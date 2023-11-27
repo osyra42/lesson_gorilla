@@ -1,73 +1,55 @@
-//an array is a list
-var array = ["", "sword", 9, false];
-console.log(1);
-console.log(array);
-console.log(" ");
+const cmd = console.log;
 
-//you can call an index
-console.log(2)
-console.log(array[1]);
-console.log(" ")
+var a = 2;
+var b = 5;
+var c = "score ";
 
-//you can edit and index
-array[6] = "green";
-console.log(3)
-console.log(array);
-console.log(" ")
+//output 1
+//adding two numbers
+cmd("Output #01");
+var adding = a + b;
+cmd(adding);
+cmd(" ");
 
-//you can add a blank
-array[0] = "durability";
-console.log(4)
-console.log(array);
-console.log(" ")
+//output 2
+//concacting numbers and strings
+cmd("Output #02");
+var concact = c + b;
+cmd(concact);
+cmd(" ");
 
-//a blank is undefined
-console.log(5)
-console.log(array[5]);
-console.log(" ")
+//output 3
+//adding in a sentence
+cmd("Output #03");
+cmd("I am " + b + " years old.");
+cmd(" ");
 
-//lists can go in a list
-var pets = ["bird", "fish", "frog"];
-array[4] = pets;
-console.log(6)
-console.log(array);
-console.log(" ")
+//output 4
+//all the maths
+cmd("Output #04");
+console.log(3 - 5);     // outputs -2
+console.log(3 * 5);     // outputs 15
+console.log(3 / 5);     // outputs 0.6
+var x = 15;
+console.log(x % 2);
+cmd(" ")
 
-//a variable can be added a string
-var hi = "hello world"
-array[7] = hi;
-console.log(7)
-console.log(array)
-console.log(" ")
+//output 5
+//+= 
+cmd("Output #05")
+a += 1; //a = a + 1;
+cmd(a);
+cmd(" ")
 
-//you can test an array length
-array[8] = array[7].length
-console.log(8)
-console.log(array);
-console.log(" ")
-
-//you can edit a string
-array[9] = array[7].split(" ")
-console.log(9)
-console.log(array);
-console.log(" ")
-
-//you can add to the end of an array
-array.push(5)
-array.push("llama")
-console.log(10)
-console.log(array)
-console.log(" ")
-
-//you can remove from the end of an array
-array.pop()
-console.log(11)
-console.log(array)
-console.log(" ")
-
-//you can stringify an array
-var spliced = array.splice(array)
-console.log(12)
-console.log(spliced)
-console.log(" ")
-
+//output 6
+//algebra for monkey
+cmd("Output #06")
+cmd(Math.abs(-3))
+cmd(Math.exp(4))
+cmd(Math.pow(2,4))
+cmd(2*2*2*2)
+cmd(Math.floor(7.51))
+cmd(Math.random())
+// Generate a random number between 1 and 100
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+console.log("Random Number:", randomNumber);
