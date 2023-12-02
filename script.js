@@ -1,72 +1,35 @@
-var rank = "Commander";
-switch(rank)
+//variables
+var iteration;
+var index;
+var test = [8,9];
+var array = [0,1,2,3,4,5,6,7]
+var increment = 3;
+var iteration_start = 0;
+
+//push to array
+array.push(test);
+
+//for loop
+for (iteration = iteration_start; iteration < array.length; iteration+=increment)
 {
-    case "Private":
-    case "Sergeant":
-        console.log("You are not authorized.");
-        break;
-    case "Commander":
-        console.log("Hello commander! what can I do for you today?");
-        break;
-    case "Captain":
-        console.log("Hello captain! I will do anything you wish.");
-        break;
-        case "Sergeant":
-        console.log("You are not authorized.");
-        break;
-    case "Commander":
-        console.log("Hello commander! what can I do for you today?");
-        break;
-    case "Captain":
-        console.log("Hello captain! I will do anything you wish.");
-        break;
-        case "Sergeant":
-        console.log("You are not authorized.");
-        break;
-    case "Commander":
-        console.log("Hello commander! what can I do for you today?");
-        break;
-    case "Captain":
-        console.log("Hello captain! I will do anything you wish.");
-        break;
-        case "Sergeant":
-        console.log("You are not authorized.");
-        break;
-    case "Commander":
-        console.log("Hello commander! what can I do for you today?");
-        break;
-    case "Captain":
-        console.log("Hello captain! I will do anything you wish.");
-        break;
-    default:
-        console.log("I don't know what your rank is.");
-        break;
+    index = iteration;
+    console.log(array[index]);
 }
 
-if (rank == "Private") {
+//while loop
+var iteration = 8;
+while(iteration < array.length) {
+    index = iteration;
+    console.log(array[index]);
 
-} else if (rank == "Sergeant") {
-    console.log("You are not authorized.");
-} else if (rank == "Commander") {
-    console.log("Hello commander! what can I do for you today?");
-} else if (rank == "Captain") {
-    console.log("Hello captain! I will do anything you wish.");
-} else if (rank == "Sergeant") {
-    console.log("You are not authorized.");
-} else if (rank == "Commander") {
-    console.log("Hello commander! what can I do for you today?");
-} else if (rank == "Captain") {
-    console.log("Hello captain! I will do anything you wish.");
-} else if (rank == "Sergeant") {
-    console.log("You are not authorized.");
-} else if (rank == "Commander") {
-    console.log("Hello commander! what can I do for you today?");
-} else if (rank == "Captain") {
-    console.log("Hello captain! I will do anything you wish.");
-} else if (rank == "Sergeant") {
-    console.log("You are not authorized.");
-} else if (rank == "Commander") {
-    console.log("Hello commander! what can I do for you today?");
-} else if (rank == "Captain") {
-    console.log("Hello captain! I will do anything you wish.");
-} 
+    iteration += increment
+}
+
+//do loop (always runs once)
+var iteration = 8;
+do {
+    index = iteration;
+    console.log(array[index]);
+
+    iteration += increment
+} while (iteration < array.length)
